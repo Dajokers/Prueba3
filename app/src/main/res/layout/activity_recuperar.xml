@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/astroo"
+    tools:context=".Principal.Index"
+    android:padding="10dp">
+    <!--TEXTVIEW QUE INDIQUE BIENVENIDA-->
+    <TextView
+        android:id="@+id/tvrestablecer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="¿Cuál es su color favorito?"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edcolorfavorito"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvrestablecer"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_question_mark_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edrespuestacolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba respuesta"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnregistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edcolorfavorito"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:onClick="RegistrarDataUser"
+        android:text="RECUPERAR"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
